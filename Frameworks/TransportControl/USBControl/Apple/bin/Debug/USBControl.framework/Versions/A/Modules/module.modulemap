@@ -1,0 +1,11 @@
+framework module USBControl {
+  umbrella header "USBControl.h"
+  export *
+
+  module * { export * }
+}
+
+module USBControl.Swift {
+  header "USBControl-Swift.h"
+  requires objc
+}

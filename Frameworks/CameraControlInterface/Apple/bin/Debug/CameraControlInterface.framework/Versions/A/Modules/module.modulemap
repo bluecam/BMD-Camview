@@ -1,0 +1,11 @@
+framework module CameraControlInterface {
+  umbrella header "CameraControlInterface.h"
+  export *
+
+  module * { export * }
+}
+
+module CameraControlInterface.Swift {
+  header "CameraControlInterface-Swift.h"
+  requires objc
+}

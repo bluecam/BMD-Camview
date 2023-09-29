@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B61523123E936270001045F /* PTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B61523023E936200001045F /* PTP.framework */; };
+		1B61523223E936270001045F /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B61522723E936160001045F /* Utility.framework */; };
+		1BD618E723CC26840055810B /* USBBulkDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD618E123CC26840055810B /* USBBulkDevice.swift */; };
+		1BD618E823CC26840055810B /* USBDeviceNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD618E223CC26840055810B /* USBDeviceNotifier.swift */; };
+		1BD618E923CC26840055810B /* USBConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD618E323CC26840055810B /* USBConnectionManager.swift */; };
+		1BD618EA23CC26840055810B /* USBDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD618E423CC26840055810B /* USBDevice.swift */; };
+		1BD618EB23CC26840055810B /* USBPTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD618E623CC26840055810B /* USBPTPController.swift */; };
+		DD70225D2750529200C1B140 /* USBControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC39A5E236FDB2A008E60CB /* USBControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B61522623E936160001045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B61522123E936160001045F /* Utility.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BEFC30B23A2094100F650F1;
+			remoteInfo = Utility;
+		};
+		1B61522823E936160001045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B61522123E936160001045F /* Utility.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BD6162523CBED920055810B;
+			remoteInfo = "Utility-iOS";
+		};
+		1B61522F23E936200001045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B61522A23E936200001045F /* PTP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BAE149223A8940700C8154F;
+			remoteInfo = PTP;
+		};
+		1B61523323E9362E0001045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B61522A23E936200001045F /* PTP.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BAE149123A8940700C8154F;
+			remoteInfo = PTP;
+		};
+		1B61523523E9362E0001045F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B61522123E936160001045F /* Utility.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BEFC30A23A2094100F650F1;
+			remoteInfo = Utility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B61522123E936160001045F /* Utility.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utility.xcodeproj; path = ../../../Utility/Apple/Utility.xcodeproj; sourceTree = "<group>"; };
+		1B61522A23E936200001045F /* PTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PTP.xcodeproj; path = ../../../Protocol/PTP/Apple/PTP.xcodeproj; sourceTree = "<group>"; };
+		1BC39A59236FB34D008E60CB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1BC39A5E236FDB2A008E60CB /* USBControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBControl.h; path = Source/USBControl.h; sourceTree = SOURCE_ROOT; };
+		1BD618E123CC26840055810B /* USBBulkDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBBulkDevice.swift; sourceTree = "<group>"; };
+		1BD618E223CC26840055810B /* USBDeviceNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBDeviceNotifier.swift; sourceTree = "<group>"; };
+		1BD618E323CC26840055810B /* USBConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBConnectionManager.swift; sourceTree = "<group>"; };
+		1BD618E423CC26840055810B /* USBDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBDevice.swift; sourceTree = "<group>"; };
+		1BD618E623CC26840055810B /* USBPTPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USBPTPController.swift; sourceTree = "<group>"; };
+		C74CBBE02043E2890060C723 /* USBControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = USBControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74CBBE42043E2890060C723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74CBBEC2043E2ED0060C723 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C74CBBDC2043E2890060C723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B61523123E936270001045F /* PTP.framework in Frameworks */,
+				1B61523223E936270001045F /* Utility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B61522223E936160001045F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B61522723E936160001045F /* Utility.framework */,
+				1B61522923E936160001045F /* Utility.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B61522B23E936200001045F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B61523023E936200001045F /* PTP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BC39A58236FB34D008E60CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC39A59236FB34D008E60CB /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BD618DF23CC26840055810B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1BC39A5E236FDB2A008E60CB /* USBControl.h */,
+				1BD618E523CC26840055810B /* Controllers */,
+				1BD618E023CC26840055810B /* USB */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1BD618E023CC26840055810B /* USB */ = {
+			isa = PBXGroup;
+			children = (
+				1BD618E123CC26840055810B /* USBBulkDevice.swift */,
+				1BD618E323CC26840055810B /* USBConnectionManager.swift */,
+				1BD618E423CC26840055810B /* USBDevice.swift */,
+				1BD618E223CC26840055810B /* USBDeviceNotifier.swift */,
+			);
+			path = USB;
+			sourceTree = "<group>";
+		};
+		1BD618E523CC26840055810B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BD618E623CC26840055810B /* USBPTPController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C74CBBD62043E2890060C723 = {
+			isa = PBXGroup;
+			children = (
+				1B61522123E936160001045F /* Utility.xcodeproj */,
+				1B61522A23E936200001045F /* PTP.xcodeproj */,
+				C74CBBEB2043E2ED0060C723 /* Config */,
+				1BD618DF23CC26840055810B /* Source */,
+				C74CBBE12043E2890060C723 /* Products */,
+				1BC39A58236FB34D008E60CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C74CBBE12043E2890060C723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C74CBBE02043E2890060C723 /* USBControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C74CBBEB2043E2ED0060C723 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C74CBBE42043E2890060C723 /* Info.plist */,
+				C74CBBEC2043E2ED0060C723 /* Config.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DD70225B2750528B00C1B140 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD70225D2750529200C1B140 /* USBControl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C74CBBDF2043E2890060C723 /* USBControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C74CBBE82043E2890060C723 /* Build configuration list for PBXNativeTarget "USBControl" */;
+			buildPhases = (
+				DD70225E275052A300C1B140 /* Report Environment */,
+				DD70225B2750528B00C1B140 /* Headers */,
+				C74CBBDB2043E2890060C723 /* Sources */,
+				C74CBBDC2043E2890060C723 /* Frameworks */,
+				C74CBBDE2043E2890060C723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B61523423E9362E0001045F /* PBXTargetDependency */,
+				1B61523623E9362E0001045F /* PBXTargetDependency */,
+			);
+			name = USBControl;
+			productName = USBControl;
+			productReference = C74CBBE02043E2890060C723 /* USBControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C74CBBD72043E2890060C723 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "Blackmagic Design Inc";
+				TargetAttributes = {
+					C74CBBDF2043E2890060C723 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C74CBBDA2043E2890060C723 /* Build configuration list for PBXProject "USBControl" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C74CBBD62043E2890060C723;
+			productRefGroup = C74CBBE12043E2890060C723 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1B61522B23E936200001045F /* Products */;
+					ProjectRef = 1B61522A23E936200001045F /* PTP.xcodeproj */;
+				},
+				{
+					ProductGroup = 1B61522223E936160001045F /* Products */;
+					ProjectRef = 1B61522123E936160001045F /* Utility.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C74CBBDF2043E2890060C723 /* USBControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1B61522723E936160001045F /* Utility.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utility.framework;
+			remoteRef = 1B61522623E936160001045F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B61522923E936160001045F /* Utility.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utility.framework;
+			remoteRef = 1B61522823E936160001045F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B61523023E936200001045F /* PTP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PTP.framework;
+			remoteRef = 1B61522F23E936200001045F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C74CBBDE2043E2890060C723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD70225E275052A300C1B140 /* Report Environment */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Report Environment";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C74CBBDB2043E2890060C723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BD618EB23CC26840055810B /* USBPTPController.swift in Sources */,
+				1BD618EA23CC26840055810B /* USBDevice.swift in Sources */,
+				1BD618E823CC26840055810B /* USBDeviceNotifier.swift in Sources */,
+				1BD618E723CC26840055810B /* USBBulkDevice.swift in Sources */,
+				1BD618E923CC26840055810B /* USBConnectionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B61523423E9362E0001045F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PTP;
+			targetProxy = 1B61523323E9362E0001045F /* PBXContainerItemProxy */;
+		};
+		1B61523623E9362E0001045F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Utility;
+			targetProxy = 1B61523523E9362E0001045F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C74CBBE62043E2890060C723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74CBBEC2043E2ED0060C723 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackmagicdesign.camera.transport.USBControl;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		C74CBBE72043E2890060C723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74CBBEC2043E2ED0060C723 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackmagicdesign.camera.transport.USBControl;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		C74CBBE92043E2890060C723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../Utility/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/../../../Protocol/PTP/Apple/bin/$(CONFIGURATION)",
+				);
+				FRAMEWORK_VERSION = A;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C74CBBEA2043E2890060C723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../Utility/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/../../../Protocol/PTP/Apple/bin/$(CONFIGURATION)",
+				);
+				FRAMEWORK_VERSION = A;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C74CBBDA2043E2890060C723 /* Build configuration list for PBXProject "USBControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74CBBE62043E2890060C723 /* Debug */,
+				C74CBBE72043E2890060C723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C74CBBE82043E2890060C723 /* Build configuration list for PBXNativeTarget "USBControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C74CBBE92043E2890060C723 /* Debug */,
+				C74CBBEA2043E2890060C723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C74CBBD72043E2890060C723 /* Project object */;
+}

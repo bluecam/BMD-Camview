@@ -1,0 +1,11 @@
+framework module CCU {
+  umbrella header "CCU.h"
+  export *
+
+  module * { export * }
+}
+
+module CCU.Swift {
+  header "CCU-Swift.h"
+  requires objc
+}

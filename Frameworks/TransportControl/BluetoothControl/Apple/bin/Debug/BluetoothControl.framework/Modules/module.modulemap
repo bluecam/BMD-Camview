@@ -1,0 +1,11 @@
+framework module BluetoothControl {
+  umbrella header "BluetoothControl.h"
+  export *
+
+  module * { export * }
+}
+
+module BluetoothControl.Swift {
+  header "BluetoothControl-Swift.h"
+  requires objc
+}
