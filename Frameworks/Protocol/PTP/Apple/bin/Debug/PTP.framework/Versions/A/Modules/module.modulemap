@@ -1,0 +1,11 @@
+framework module PTP {
+  umbrella header "PTP.h"
+  export *
+
+  module * { export * }
+}
+
+module PTP.Swift {
+  header "PTP-Swift.h"
+  requires objc
+}

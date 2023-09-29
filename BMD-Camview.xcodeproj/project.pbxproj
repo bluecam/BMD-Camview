@@ -13,7 +13,63 @@
 		CC5879EA2AC759B00081A644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5879E82AC759B00081A644 /* Main.storyboard */; };
 		CC5879EC2AC759B20081A644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5879EB2AC759B20081A644 /* Assets.xcassets */; };
 		CC5879EF2AC759B20081A644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5879ED2AC759B20081A644 /* LaunchScreen.storyboard */; };
+		CCC5DE452AC75BC100465D7F /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE212AC75AE700465D7F /* Utility.framework */; };
+		CCC5DE462AC75BC100465D7F /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE212AC75AE700465D7F /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCC5DE482AC75BC300465D7F /* CCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE282AC75AF500465D7F /* CCU.framework */; };
+		CCC5DE492AC75BC300465D7F /* CCU.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE282AC75AF500465D7F /* CCU.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCC5DE4A2AC75BC400465D7F /* CameraControlInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE3E2AC75B0900465D7F /* CameraControlInterface.framework */; };
+		CCC5DE4B2AC75BC400465D7F /* CameraControlInterface.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE3E2AC75B0900465D7F /* CameraControlInterface.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCC5DE4C2AC75BC600465D7F /* BluetoothControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE302AC75AFF00465D7F /* BluetoothControl.framework */; };
+		CCC5DE4D2AC75BC600465D7F /* BluetoothControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE302AC75AFF00465D7F /* BluetoothControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCC5DE202AC75AE700465D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC5DE1C2AC75AE700465D7F /* Utility.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BD6162523CBED920055810B;
+			remoteInfo = "Utility-iOS";
+		};
+		CCC5DE272AC75AF500465D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC5DE222AC75AF500465D7F /* CCU.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BD6165623CBF4AD0055810B;
+			remoteInfo = "CCU-iOS";
+		};
+		CCC5DE2F2AC75AFF00465D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC5DE292AC75AFF00465D7F /* BluetoothControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BD6185F23CC21D40055810B;
+			remoteInfo = "BluetoothControl-iOS";
+		};
+		CCC5DE3D2AC75B0900465D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC5DE312AC75B0900465D7F /* CameraControlInterface.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1BD6182A23CC207D0055810B;
+			remoteInfo = "CameraControlInterface-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CCC5DE472AC75BC100465D7F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CCC5DE4B2AC75BC400465D7F /* CameraControlInterface.framework in Embed Frameworks */,
+				CCC5DE4D2AC75BC600465D7F /* BluetoothControl.framework in Embed Frameworks */,
+				CCC5DE492AC75BC300465D7F /* CCU.framework in Embed Frameworks */,
+				CCC5DE462AC75BC100465D7F /* Utility.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC5879DF2AC759B00081A644 /* BMD-Camview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMD-Camview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +80,10 @@
 		CC5879EB2AC759B20081A644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5879EE2AC759B20081A644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5879F02AC759B20081A644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC5DE1C2AC75AE700465D7F /* Utility.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utility.xcodeproj; path = Utility/Apple/Utility.xcodeproj; sourceTree = "<group>"; };
+		CCC5DE222AC75AF500465D7F /* CCU.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCU.xcodeproj; path = Protocol/CCU/Apple/CCU.xcodeproj; sourceTree = "<group>"; };
+		CCC5DE292AC75AFF00465D7F /* BluetoothControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BluetoothControl.xcodeproj; path = TransportControl/BluetoothControl/Apple/BluetoothControl.xcodeproj; sourceTree = "<group>"; };
+		CCC5DE312AC75B0900465D7F /* CameraControlInterface.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CameraControlInterface.xcodeproj; path = CameraControlInterface/Apple/CameraControlInterface.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCC5DE482AC75BC300465D7F /* CCU.framework in Frameworks */,
+				CCC5DE4C2AC75BC600465D7F /* BluetoothControl.framework in Frameworks */,
+				CCC5DE452AC75BC100465D7F /* Utility.framework in Frameworks */,
+				CCC5DE4A2AC75BC400465D7F /* CameraControlInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +104,7 @@
 		CC5879D62AC759B00081A644 = {
 			isa = PBXGroup;
 			children = (
+				CC7D364E2AC75A5F00DE11E1 /* Frameworks */,
 				CC5879E12AC759B00081A644 /* BMD-Camview */,
 				CC5879E02AC759B00081A644 /* Products */,
 			);
@@ -67,6 +132,49 @@
 			path = "BMD-Camview";
 			sourceTree = "<group>";
 		};
+		CC7D364E2AC75A5F00DE11E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5DE312AC75B0900465D7F /* CameraControlInterface.xcodeproj */,
+				CCC5DE292AC75AFF00465D7F /* BluetoothControl.xcodeproj */,
+				CCC5DE222AC75AF500465D7F /* CCU.xcodeproj */,
+				CCC5DE1C2AC75AE700465D7F /* Utility.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC5DE1D2AC75AE700465D7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5DE212AC75AE700465D7F /* Utility.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC5DE232AC75AF500465D7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5DE282AC75AF500465D7F /* CCU.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC5DE2A2AC75AFF00465D7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5DE302AC75AFF00465D7F /* BluetoothControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC5DE322AC75B0900465D7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC5DE3E2AC75B0900465D7F /* CameraControlInterface.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +185,7 @@
 				CC5879DB2AC759B00081A644 /* Sources */,
 				CC5879DC2AC759B00081A644 /* Frameworks */,
 				CC5879DD2AC759B00081A644 /* Resources */,
+				CCC5DE472AC75BC100465D7F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +222,61 @@
 			mainGroup = CC5879D62AC759B00081A644;
 			productRefGroup = CC5879E02AC759B00081A644 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCC5DE2A2AC75AFF00465D7F /* Products */;
+					ProjectRef = CCC5DE292AC75AFF00465D7F /* BluetoothControl.xcodeproj */;
+				},
+				{
+					ProductGroup = CCC5DE322AC75B0900465D7F /* Products */;
+					ProjectRef = CCC5DE312AC75B0900465D7F /* CameraControlInterface.xcodeproj */;
+				},
+				{
+					ProductGroup = CCC5DE232AC75AF500465D7F /* Products */;
+					ProjectRef = CCC5DE222AC75AF500465D7F /* CCU.xcodeproj */;
+				},
+				{
+					ProductGroup = CCC5DE1D2AC75AE700465D7F /* Products */;
+					ProjectRef = CCC5DE1C2AC75AE700465D7F /* Utility.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CC5879DE2AC759B00081A644 /* BMD-Camview */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CCC5DE212AC75AE700465D7F /* Utility.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utility.framework;
+			remoteRef = CCC5DE202AC75AE700465D7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCC5DE282AC75AF500465D7F /* CCU.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CCU.framework;
+			remoteRef = CCC5DE272AC75AF500465D7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCC5DE302AC75AFF00465D7F /* BluetoothControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BluetoothControl.framework;
+			remoteRef = CCC5DE2F2AC75AFF00465D7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCC5DE3E2AC75B0900465D7F /* CameraControlInterface.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CameraControlInterface.framework;
+			remoteRef = CCC5DE3D2AC75B0900465D7F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CC5879DD2AC759B00081A644 /* Resources */ = {
@@ -293,8 +451,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87KP2X8B9K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/Utility/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/Protocol/PTP/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/TransportControl/USBControl/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/Protocol/CCU/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/TransportControl/BluetoothControl/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/CameraControlInterface/Apple/bin/$(CONFIGURATION)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMD-Camview/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Just hit the OK button";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,8 +488,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87KP2X8B9K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks/Utility/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/Protocol/PTP/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/TransportControl/USBControl/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/Protocol/CCU/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/TransportControl/BluetoothControl/Apple/bin/$(CONFIGURATION)",
+					"$(SRCROOT)/Frameworks/CameraControlInterface/Apple/bin/$(CONFIGURATION)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BMD-Camview/Info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Just hit the OK button";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
