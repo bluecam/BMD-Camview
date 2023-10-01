@@ -202,7 +202,7 @@ public class CameraControlInterface:
         }
     #endif
 		
-		return TransportControl.None
+		return TransportControl.Bluetooth
 	}
     
     public func setSuspended(_ suspended: Bool) {

@@ -13,7 +13,6 @@
 		CC5879EA2AC759B00081A644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5879E82AC759B00081A644 /* Main.storyboard */; };
 		CC5879EC2AC759B20081A644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5879EB2AC759B20081A644 /* Assets.xcassets */; };
 		CC5879EF2AC759B20081A644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5879ED2AC759B20081A644 /* LaunchScreen.storyboard */; };
-		CC7EAF3E2AC7841A00F4AF47 /* ISOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EAF3D2AC7841A00F4AF47 /* ISOViewController.swift */; };
 		CCC5DE452AC75BC100465D7F /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE212AC75AE700465D7F /* Utility.framework */; };
 		CCC5DE462AC75BC100465D7F /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE212AC75AE700465D7F /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCC5DE482AC75BC300465D7F /* CCU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC5DE282AC75AF500465D7F /* CCU.framework */; };
@@ -81,7 +80,6 @@
 		CC5879EB2AC759B20081A644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC5879EE2AC759B20081A644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC5879F02AC759B20081A644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC7EAF3D2AC7841A00F4AF47 /* ISOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISOViewController.swift; sourceTree = "<group>"; };
 		CCC5DE1C2AC75AE700465D7F /* Utility.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utility.xcodeproj; path = Utility/Apple/Utility.xcodeproj; sourceTree = "<group>"; };
 		CCC5DE222AC75AF500465D7F /* CCU.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CCU.xcodeproj; path = Protocol/CCU/Apple/CCU.xcodeproj; sourceTree = "<group>"; };
 		CCC5DE292AC75AFF00465D7F /* BluetoothControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BluetoothControl.xcodeproj; path = TransportControl/BluetoothControl/Apple/BluetoothControl.xcodeproj; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				CC5879E42AC759B00081A644 /* SceneDelegate.swift */,
 				CC5879E62AC759B00081A644 /* ViewController.swift */,
 				CC5879E82AC759B00081A644 /* Main.storyboard */,
-				CC7EAF3D2AC7841A00F4AF47 /* ISOViewController.swift */,
 				CC5879EB2AC759B20081A644 /* Assets.xcassets */,
 				CC5879ED2AC759B20081A644 /* LaunchScreen.storyboard */,
 				CC5879F02AC759B20081A644 /* Info.plist */,
@@ -299,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC7EAF3E2AC7841A00F4AF47 /* ISOViewController.swift in Sources */,
 				CC5879E72AC759B00081A644 /* ViewController.swift in Sources */,
 				CC5879E32AC759B00081A644 /* AppDelegate.swift in Sources */,
 				CC5879E52AC759B00081A644 /* SceneDelegate.swift in Sources */,

@@ -9,20 +9,61 @@ import UIKit
 import Utility
 import CCU
 import BluetoothControl
+import CameraControlInterface
 
 
-class ViewController: BasicCameraControlViewController {
+class ViewController: BasicCameraControlViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var ISOPicker: UIPickerView!
     
     @IBOutlet weak var powerButton: UIButton!
     @IBOutlet weak var timecodeLabel: UITextField!
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return isoValues.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(isoValues[row])
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // Member variables
+    weak var cciOut: OutgoingCameraControlFromUIDelegate?
+    
+    
+    var isoValues = VideoConfig.kISOValues[CameraModel.Unknown]!
+    
     var recording: Bool = false
     var powerOn: Bool = false
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let isoIndex: Int = pickerView.selectedRow(inComponent: 0)
+        cciOut?.onISOChanged(isoIndex)
+        // The parameter named row and component represents what was selected.
+    }
+    override func onCameraSpecificationReceived(_ cameraModel: CameraModel) {
+        isoValues = VideoConfig.kISOValues[cameraModel] ?? VideoConfig.kISOValues[CameraModel.Unknown]!
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ISOPicker.delegate = self
+        self.ISOPicker.dataSource = self
+        
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        cciOut = appDelegate.cameraControlInterface
     }
     
     //=======================================================
@@ -94,4 +135,7 @@ class ViewController: BasicCameraControlViewController {
         timecodeLabel.text = timecode.stringValue
     }
 }
+
+
+
 

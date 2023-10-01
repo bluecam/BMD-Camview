@@ -47,18 +47,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xk8-EL-GNr">
-                                <rect key="frame" x="61" y="68" width="298" height="241"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="UUY-uv-do2" kind="embed" id="Qh3-vO-y8G"/>
-                                </connections>
-                            </containerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDB-UD-E3n">
+                                <rect key="frame" x="116" y="118" width="295" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="ISOPicker" destination="hDB-UD-E3n" id="Kvh-dN-mSD"/>
                         <outlet property="powerButton" destination="OgP-Xh-pu1" id="8Vr-sP-aoO"/>
                         <outlet property="recordButton" destination="cXZ-0n-cwy" id="WXj-ay-3kZ"/>
                         <outlet property="timecodeLabel" destination="4tI-6f-Qdm" id="xD3-ti-20N"/>
@@ -67,30 +65,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.942898975109806" y="-27.5390625"/>
-        </scene>
-        <!--Picker View Controller-->
-        <scene sceneID="nlk-lH-LzH">
-            <objects>
-                <viewController id="UUY-uv-do2" customClass="ISOPickerViewController" customModule="BMD_Camview" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nNz-0G-fTL">
-                        <rect key="frame" x="0.0" y="0.0" width="298" height="241"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjG-YK-Yhc">
-                                <rect key="frame" x="-22" y="-27" width="320" height="241"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="RHs-Tw-I6c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="ISOPicker" destination="gjG-YK-Yhc" id="xma-Z3-Y9n"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d2x-1n-WrO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-407.17423133235724" y="-226.46484374999997"/>
         </scene>
     </scenes>
     <resources>
