@@ -40,7 +40,7 @@ class ViewController: BasicCameraControlViewController, UIPickerViewDelegate, UI
     
     // Member variables
     weak var cciOut: OutgoingCameraControlFromUIDelegate?
-    
+    weak var m_outgoingCameraControlDelegate: OutgoingCameraControlFromUIDelegate?
     
     var isoValues = VideoConfig.kISOValues[CameraModel.Unknown]!
     
@@ -64,6 +64,12 @@ class ViewController: BasicCameraControlViewController, UIPickerViewDelegate, UI
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         cciOut = appDelegate.cameraControlInterface
+        
+        
+        let cameraControlInterface: CameraControlInterface = appDelegate.cameraControlInterface
+        m_outgoingCameraControlDelegate = cameraControlInterface
+
+        let cameraModel = cameraControlInterface.getCameraModel()
     }
     
     //=======================================================
